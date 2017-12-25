@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "lib": ["es2017.object", "es2016", "dom", "dom.iterable", "scripthost"],
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noEmitOnError": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "baseUrl": ".",
+    "module": "es6",
+    "paths": {
+      "roll-web/tests/*": ["tests/*"],
+      "roll-web/*": [
+        "app/*"
+      ]
+    }
+  },
+  "exclude": [
+    "tmp",
+    "dist",
+    "node_modules",
+    "bower_components"
+  ]
+}
