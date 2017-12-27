@@ -4,9 +4,12 @@
   "description": "Application portal to conduct DnD and other fantasy campaigns",
   "main": "roll-api/index.js",
   "scripts": {
-    "start": "npm run build && node roll-api/index.js",
+    "start": "node roll-api/index.js",
+    "start-dev": "npm run build && node roll-api/index.js",
+    "start-prod": "npm run build-prod && node roll-api/index.js",
     "build": "cd roll-web && ember build",
-    "start-dev": "npm run build && nodemon roll-api/index.js",
+    "build-prod": "cd roll-web && ember build --environment=production",
+    "start-watch": "npm run build && nodemon roll-api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
